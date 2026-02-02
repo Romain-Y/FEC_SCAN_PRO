@@ -1,0 +1,23 @@
+# --- DOSSIERS SYSTÈME A IGNORER ---
+.venv/
+venv/
+env/
+__pycache__/
+.git/
+.vscode/
+
+# --- DONNÉES SENSIBLES ---
+INPUT/
+OUTPUT/
+*.xlsx
+*.csv
+*.txt
+.env
+db.sqlite3
+
+# --- FICHIERS TEMPORAIRES ---
+_ARCHIVES_OLD/
+dist/
+build/
+*.spec
+*.exe
