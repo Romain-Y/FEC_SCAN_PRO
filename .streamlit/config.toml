@@ -7,3 +7,9 @@ textColor = "#fafafa"
 
 [server]
 headless = false
+address = "localhost"
+port = 8501
+
+[browser]
+gatherUsageStats = false
+serverAddress = "localhost"
