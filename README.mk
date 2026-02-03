@@ -1,6 +1,6 @@
 # FEC SCAN PRO 
 
-**L'Audit Comptable Automatisé par Intelligence Artificielle.**
+**L'Audit Comptable Automatisé.**
 
 Ce projet est une solution Fullstack (Django / React / Streamlit) permettant d'analyser les Fichiers des Écritures Comptables (FEC) pour détecter instantanément les anomalies fiscales et comptables.
 
