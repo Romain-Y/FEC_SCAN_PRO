@@ -3,7 +3,67 @@
 **L'Audit Comptable Automatisé.**
 
 Ce projet est une solution Fullstack (Django / React / Streamlit) permettant d'analyser les Fichiers des Écritures Comptables (FEC) pour détecter instantanément les anomalies fiscales et comptables.
+# FEC SCAN — Plateforme d'Audit et de Détection d'Anomalies FEC
 
+Solution applicative d'ingestion, d'audit fiscal et d'analyse prédictive des Fichiers des Écritures Comptables (FEC) conforme aux exigences de la DGFiP, développée dans le cadre de la certification Bachelor 3 Intelligence Artificielle & Data.
+
+---
+
+## 1. Informations Générales et Accès Publics
+
+* **Nom du projet :** FEC SCAN
+* **Périmètre académique :** Projet annuel de certification B3 IA & Data
+* **URL publique de l'application :** `https://fec-scan.votre-domaine.fr`
+* **Dépôt Git du code source :** `https://github.com/Romain-Y/FEC_SCAN_PRO`
+
+---
+
+## 2. Architecture Technique et Stack Logicielle
+
+* **Couche Présentation (Frontend) :** React, Tailwind CSS, Vite
+* **Couche Métier et API (Backend) :** Python 3.10+, Django REST Framework
+* **Moteur d'Audit et Data Processing :** Pandas, NumPy
+* **Base de Données Relationnelle :** PostgreSQL 14+ (persistance des dossiers, historisation des audits et traçabilité des anomalies)
+* **Validation Multi-Navigateurs :** Google Chrome, Mozilla Firefox, Apple Safari, Microsoft Edge
+
+---
+
+## 3. Prérequis et Dépendances Système
+
+* **Python :** Version 3.10 ou supérieure
+* **Node.js :** Version 18.x ou supérieure (avec gestionnaire de paquets `npm`)
+* **Serveur SQL :** PostgreSQL 14 ou supérieur en fonctionnement local ou distant
+
+---
+
+## 4. Procédure d'Installation et d'Exécution
+
+```bash
+# 1. Récupération des sources
+git clone [https://github.com/Romain-Y/FEC_SCAN_PRO.git](https://github.com/Romain-Y/FEC_SCAN_PRO.git)
+
+
+# 2. Initialisation de la base de données PostgreSQL
+psql -U postgres -c "CREATE DATABASE fec_scan_db;"
+psql -U postgres -d fec_scan_db -f ./database/dump_fec_scan.sql
+
+# 3. Configuration et exécution de l'environnement Backend (Django)
+cd backend
+python -m venv venv
+# Activation sous Windows :
+venv\Scripts\activate
+# Activation sous Linux/macOS :
+source venv/bin/activate
+
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+
+# 4. Configuration et exécution du Frontend (React)
+# Dans un second terminal, depuis la racine du projet :
+cd frontend
+npm install
+npm run dev
 ---
 
 ##  Fonctionnalités Actuelles
