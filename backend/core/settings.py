@@ -73,17 +73,23 @@ TEMPLATES = [
 WSGI_APPLICATION = 'core.wsgi.application'
 
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
+}
+
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'fec_db',          # Le nom que tu as mis dans pgAdmin
-        'USER': 'postgres',        # L'utilisateur par défaut
-        'PASSWORD': 'Rosa.Yalap.2018',  # mdp
-        'HOST': 'localhost',       # C'est sur ton PC
-        'PORT': '5432',            # Le port standard
+        'NAME': 'fec_db',
+        'USER': 'postgres',
+        'PASSWORD': 'Rosa.Yalap.2018', 
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
@@ -128,4 +134,6 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://localhost:5174",
     "http://localhost:5175",
-]
+    "http://localhost:5175",
+    "http://127.0.0.1:5175", 
+] 

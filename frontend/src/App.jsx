@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
+import './App.css'
 
 function App() {
   const [message, setMessage] = useState('En attente du serveur...')
