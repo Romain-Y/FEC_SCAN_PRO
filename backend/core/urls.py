@@ -1,9 +1,9 @@
 from django.contrib import admin
-from django.urls import path, include  # <--- As-tu bien ajouté ', include' ici ?
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('api.urls')), # <--- Cette ligne est-elle bien là ?
+    path('api/', include('api.urls')), 
 
 ] 
 
