@@ -13,7 +13,7 @@ Solution applicative d'ingestion, d'audit fiscal et d'analyse prédictive des Fi
 
 * **Nom du projet :** FEC SCAN
 * **Périmètre académique :** Projet annuel de certification B3 IA & Data
-* **URL publique de l'application :** `https://fec-scan.votre-domaine.fr`
+* **URL publique de l'application :** `https://fecscan.fr`
 * **Dépôt Git du code source :** `https://github.com/Romain-Y/FEC_SCAN_PRO`
 
 ---
