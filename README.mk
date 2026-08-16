@@ -2,7 +2,7 @@
 
 **L'Audit Comptable Automatisé.**
 
-Ce projet est une solution Fullstack (Django / React / Streamlit) permettant d'analyser les Fichiers des Écritures Comptables (FEC) pour détecter instantanément les anomalies fiscales et comptables.
+Ce projet est une solution Fullstack (Django / React) permettant d'analyser les Fichiers des Écritures Comptables (FEC) pour détecter instantanément les anomalies fiscales et comptables.
 # FEC SCAN — Plateforme d'Audit et de Détection d'Anomalies FEC
 
 Solution applicative d'ingestion, d'audit fiscal et d'analyse prédictive des Fichiers des Écritures Comptables (FEC) conforme aux exigences de la DGFiP, développée dans le cadre de la certification Bachelor 3 Intelligence Artificielle & Data.
@@ -86,20 +86,10 @@ npm run dev
 - Génération automatique d'un rapport d'audit au format Excel.
 - Visualisation des KPI clés via une interface web interactive.
 
----
-
-## Roadmap (Évolutions Futures)
-
-L'objectif est de passer d'un audit "Passif" à un audit "Actif" pour faire gagner du temps aux experts-comptables.
-
-- [ ] **Génération d'OD de Correction** : Export automatique d'un fichier d'écritures (format TRA/CSV) importable directement dans Cegid/Sage pour corriger les erreurs sans ressaisie manuelle.
-- [ ] **Deep Linking (SaaS)** : Pour les logiciels web (Pennylane, Tiime), ajout de liens directs vers l'écriture comptable incriminée pour une correction en 1 clic.
-
----
 
 ## Stack Technique
 
 - **Langage** : Python 3.13
 - **Backend** : Django (Structure et API)
-- **Frontend / Data Viz** : Streamlit (Protopytage rapide), React (Interface finale)
+- **Frontend**: React (Interface finale)
 - **Analyse de Données** : Pandas
